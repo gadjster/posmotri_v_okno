@@ -64,15 +64,11 @@ ol {
   }
 
 
-  .content__list-item{
-    margin-bottom: 30px;
-
+  .content__list-item:not(:first-child){
+    margin-top: 30px;
   }
 
-  .content__list-item:last-of-type(1){
-    margin-bottom: 0px;
 
-  }
 
 
   .content__details{
