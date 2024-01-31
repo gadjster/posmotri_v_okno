@@ -229,11 +229,13 @@ outline: none;
  }
 
  .search-form__textfield:focus{
-  border-top:1px double  #FFF;
+  border-top:2px double  #FFF;
   border-left: 1px solid #FFF;
   border-right: 1px solid #FFF;
-  border-bottom: 1px double #FFF;
+  border-bottom: 2px double #FFF;
   outline: none;
+
+  
 
  }
 
@@ -252,6 +254,8 @@ outline: none;
 
   .search-form__checkbox-list{
     display: flex;
+    justify-content: space-between;
+    width: 212px;
   
   }
 
@@ -277,4 +281,54 @@ outline: none;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+  }
+
+
+.search-form__checkbox::before{
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #adb5bd;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+
+
+
+}
+
+
+
+
+  .button{
+    background-color:transparent;
+    color: #FFF;
+    text-align: center;
+    font-family: "Fira Sans Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border: 1px solid #FFF
+  }
+
+  .search-form__submit-button{
+    width: 194px;
+    height: 34px;
+    align-self:flex-end;
+
+
+  }
+
+  .more-button{
+
+width: 100%;
+height: 34px;
+
+
   }
