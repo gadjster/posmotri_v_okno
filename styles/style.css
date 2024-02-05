@@ -353,6 +353,7 @@ text-decoration: underline;
 	content: '';
 	position: relative;
 	display: inline-block;
+	margin: auto ;
 	width: 19px;
 	height: 19px;
 	border: 1px solid #adb5bd;
@@ -361,14 +362,15 @@ text-decoration: underline;
 
 .search-form__checkbox:checked + .search-form__pseudo-checkbox::before{
 	content: '';
-	position: absolute;
-	top:50%;
-	left: 50%;
-	display: inline-block;
+	display:inline-block;
+	margin: auto ;
+
+
+
 	width: 15px;
 	height: 15px;
 	background-color: #adb5bd;
-	transform: translate(-50%, -50%);
+
 }
 
 .search-form__label:has(.search-form__checkbox:focus-visible){
