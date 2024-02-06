@@ -53,7 +53,6 @@ ol {
 	justify-content:start;
 	gap:30px;
 	min-width: 1140px;
-	height: 534px;
 
 }
 
@@ -117,7 +116,7 @@ ol {
 
 .content__video-card-thumbnail{
 	width: 194px;
-	height: 103px;
+	min-height: 103px;
 
 }
 
@@ -140,7 +139,7 @@ ol {
 
 .title{
 	color: #FFF;
-	font-family: Oswald;
+	font-family: Oswald, sans-serif;
 	font-weight: 700;
 	font-size: 75px;
 	font-style: normal;
@@ -185,10 +184,19 @@ ol {
 
 }
 
+
+.content__card-link:active{
+	background-color:#545050;
+
+}
+
+
+
+
 .content__video-card-title{
 	margin-top: 5px;
 	margin-left: 5px;
-	font-family: Oswald;
+	font-family: Oswald, sans-serif;
 	font-weight: 700;
 	font-size: 30px;
 	font-style: normal;
@@ -199,7 +207,7 @@ ol {
 
 .content__video-card-description{
 	margin-left: 5px;
-	font-family: "Fira Sans Condensed";
+	font-family: 'Fira Sans Condensed', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	font-style: normal;
@@ -230,7 +238,7 @@ ol {
 
 .search-form__fieldset-title{
 	color: #FFF;
-	font-family: "Fira Sans Condensed";
+	font-family: 'Fira Sans Condensed', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	font-style: normal;
@@ -249,8 +257,7 @@ ol {
 }
 
 .search-form__textfield:active{
-	border: 1px solid #FFF;
-	outline: none;
+	outline: 1px solid #FFF;
 
 }
 
@@ -278,9 +285,8 @@ ol {
 
 .search-form__textfield{
 	width: 225px;
-	height: 27px;
 	color: rgba(255, 255, 255, 0.70);
-	font-family: "Fira Sans Condensed";
+	font-family: 'Fira Sans Condensed', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	font-style: normal;
@@ -292,7 +298,7 @@ ol {
 
 .search-form__textfield::placeholder{
 	color: rgba(255, 255, 255, 0.70);
-	font-family: "Fira Sans Condensed";
+	font-family: 'Fira Sans Condensed', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	font-style: normal;
@@ -314,8 +320,8 @@ ol {
 .search-form__label-text{
 	align-content:center;
 	margin-left: 2px;
-	color: rgba(255, 255, 255, 0.70);
-	font-family: "Fira Sans Condensed";
+	color: rgba(255 255 255 / 0.7);
+	font-family: 'Fira Sans Condensed', sans-serif;
 	font-weight: 400;
 	font-size: 18px;
 	font-style: normal;
@@ -346,7 +352,7 @@ ol {
 	margin: auto ;
 	width: 15px;
 	height: 15px;
-	background-color: #adb5bd;
+	background-color: #FFFFFF;
 
 }
 
@@ -360,7 +366,7 @@ ol {
 .button{
 	border: 1px solid #FFF;
 	color: #FFF;
-	font-family: "Fira Sans Condensed";
+	font-family: 'Fira Sans Condensed', sans-serif;
 	font-weight: 700;
 	font-size: 18px;
 	font-style: normal;
@@ -382,7 +388,6 @@ ol {
 }
 
 .button:focus{
-	border: none;
 	outline: none;
 }
 
@@ -395,14 +400,14 @@ ol {
 .search-form__submit-button{
 	align-self:flex-end;
 	width: 194px;
-	height: 34px;
+	min-height: 34px;
 
 }
 
 .more-button{
 	position: sticky;
 	width: 100%;
-	height: 34px;
+	min-height: 34px;
 	margin-top: 30px;
 
 }
